@@ -27,16 +27,22 @@
   <div class="error-message">
 
   </div>
-
+  
   <style>
     .form-container {
-      display: flex;
-      flex-direction: column;
       background: dodgerblue;
-      width: calc( 100vw - 100px );
+      width: calc( 100vw - 200px );
       margin: 0 auto;
       text-align: center;
-      padding-bottom: 100px;
+      padding-bottom: 10vh;
+      border-radius: 1vw;
+    }
+
+    #form-element {
+      display: flex;
+      flex-direction: column;
+      width: calc(100vw - 50vw);
+      margin: 0 auto;
     }
 
     .input-error {
@@ -49,7 +55,20 @@
     }
 
     #submit {
+      margin-top: 10vh;
       cursor: pointer;
+    }
+
+    .error-message {
+      background-color: red;
+      width: calc(100vw - 25vw);
+      margin: 0 auto;
+      border-radius: 1vw;
+    }
+
+    input {
+      border: 0 solid white;
+      padding: 0.5vh;
     }
   </style>
 </body>
