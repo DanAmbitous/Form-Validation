@@ -7,7 +7,6 @@ document.querySelector("#form-element").addEventListener('submit', (event) => {
   errorIndicatorRemover(usernameInput.id);
   errorIndicatorRemover(passwordInput.id);
 
-
   if (usernameInput.value.length > 10) {
     errorMessage.textContent = `Your username is ${usernameInput.value.length} characters long, which is too long, as the maximum acceptable length is 10 characters long only.`;    errorIndicator(usernameInput.id);
     errorShower('error-message')
